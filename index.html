@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,65 +8,101 @@
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
-        body { 
-            font-family: 'Roboto', sans-serif; 
-            line-height: 1.6; 
-            margin: 0; 
-            padding: 0; 
+        body {
+            font-family: 'Roboto', sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
             background-color: #f5f1e9; /* Beige color from aia.gr */
             color: #333;
         }
-        header { 
-            background: #003366; 
-            color: white; 
-            padding: 1rem; 
-            text-align: center; 
+
+        header {
+            background: #003366;
+            color: white;
+            text-align: center;
+            padding: 2rem 1rem;
+            position: relative;
         }
+
+        .header-logo {
+            max-width: 360px; /* Reduced size by 20% */
+        }
+
+        .aia-logo {
+            position: absolute;
+            bottom: 10px;
+            right: 10px;
+            max-width: 85px; /* Adjusted size to be consistent */
+        }
+
         section {
-            padding: 0.5rem; 
+            padding: 1rem 2rem;
         }
-        h2 { 
-            color: #003366; 
+
+        h2 {
+            color: #003366;
         }
+
         .tour {
             display: flex;
-            margin-bottom: 4rem;
-            align-items: flex-start;
+            margin-bottom: 2rem;
             gap: 1rem;
-            margin-bottom: 1.5rem; 
+            align-items: flex-start;
         }
+
         .tour img {
             width: 250px;
             height: 200px;
             object-fit: cover;
             border-radius: 8px;
-            margin-bottom: 2rem; /* Added extra spacing below each photo */
         }
-        .cta { 
-            font-weight: bold; 
-            color: #003366; 
+
+        .cta {
+            font-weight: bold;
+            color: #003366;
         }
-        footer { 
+
+        footer {
             background: #e6e2d6; /* Slightly darker beige */
-            text-align: center; 
-            padding: 1rem; 
-            margin-top: 2rem; 
+            text-align: center;
+            padding: 1rem;
+            margin-top: 2rem;
         }
-        a { 
-            color: #0073e6; 
-            text-decoration: none; 
+
+        a {
+            color: #0073e6;
+            text-decoration: none;
         }
-        .logo {
-            display: block;
-            margin: 20px auto;
-            max-width: 200px;
+
+        .logo-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .tour {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .tour img {
+                width: 90%;
+                height: auto;
+            }
         }
     </style>
 </head>
 <body>
     <header>
-        <img src="aia-logo.png" alt="AIA Logo" class="logo">
-        <h1>Welcome to ACI Athens Tours</h1>
+        <div class="logo-container">
+            <img src="CAPA_Airline_Leader_Summit_AIT_blue-red.png" alt="CAPA Summit Logo" class="header-logo">
+        </div>
+        <h1 style="font-size: 1.5rem; margin-top: 1cm;">Welcome to CAPA Athens Tours</h1>
+        <img src="aia-logo.png" alt="AIA Logo" class="aia-logo">
     </header>
 
     <section>
@@ -75,104 +112,9 @@
 
     <section>
         <h2>Half-Day Tours</h2>
-
-        <div class="tour">
-            <img src="athens-mythology-tour.jpg" alt="Athens Mythology Tour">
-            <div>
-                <h3><a href="https://www.alternativeathens.com/tours/mythology-highlights-tour/">Athens Highlights Mythology Tour (4 hours)</a></h3>
-                <p>Discover the myths behind the greatest landmarks in Athens! Enjoy a unique 4-hour mythological tour that will help you understand how Athens became one of the greatest cities in the world and a beacon of civilization. Our expert guide will let you know all about Greek gods and heroes in an entertaining way and will help you discover what really hides behind the universal myths! At the same time, you’ll get to visit the most impressive landmarks and sites in Athens: The majestic Acropolis (the Parthenon, the Theater of Dionysus, the Temple of Athena Nike, The Erechtheion, the Sanctuary of Asclepius), the Temple of Olympian Zeus, the Ancient Agora, and the temple of Hephaestus! A fun and lively experience that will give you real insight.</p>
-            </div>
-        </div>
-
-        <div class="tour">
-            <img src="acropolis-afternoon-tour.jpg" alt="Acropolis Afternoon Tour">
-            <div>
-                <h3><a href="https://www.alternativeathens.com/tours/beat-crowds-acropolis-afternoon-tour/">Beat the Crowds Afternoon Acropolis Tour (2 hours)</a></h3>
-                <p>The afternoon hours are the best time of the day to visit the greatest landmark in Athens. As the crowds have thinned and the summer heat has eased, you’ll visit the world-famous Acropolis in ideal conditions. Learn about Greek gods and heroes from your top-rated licensed guide and see the universal monuments on the Acropolis hill up close in this 2-hour afternoon tour.</p>
-            </div>
-        </div>
-
-        <div class="tour">
-            <img src="athens-food-tour.JPG" alt="Athens Food Tour">
-            <div>
-                <h3><a href="https://www.alternativeathens.com/tours/delicious-athens-food-tour/">The Delicious Athens Food Tour (3.5 hours)</a></h3>
-                <p>During this tour we will discover Greek flavors and their history with an easy-paced stroll walk through some of the city’s most interesting and less touristy neighborhoods. We will visit food markets and carefully selected deli stores and we will help you familiarize yourselves with the most famous flavors of the Greek cuisine, alongside a top-rated guide! Our tastings include olive oils, tapenades, rusks, tsipouro drink, cheeses, Greek souvlaki, a variety of Greek tapas and sweets (bougatsa, baklava, Greek donuts).</p>
-            </div>
-        </div>
-
-        <div class="tour">
-            <img src="athens-orientation-tour.jpeg" alt="Athens Orientation Tour">
-            <div>
-                <h3><a href="https://www.alternativeathens.com/tours/athens-orientation-tour/">Unexpected Athens Orientation Tour (4 hours)</a></h3>
-                <p>In this tour we will experience the real Athens, as it has evolved through the centuries. Specifically, we will visit 5 contrasting neighborhoods and understand how 4 different cities coexist and intertwine: the ancient, the Ottoman, the neoclassical, and modern Athens, with glimpses into Athens of World War II. It lasts 4 hours, starts from Parliament Square, and ends in the Monastiraki area, covering also Kolonaki, Exarchia, Syntagma, Psiri, and the Athens Trilogy.</p>
-            </div>
-        </div>
-
-        <div class="tour">
-            <img src="olympic-games-workout.jpg" alt="Olympic Games Workout">
-            <div>
-                <h3><a href="https://www.alternativeathens.com/tours/olympic-games/">The Olympic Games Workout (2 hours)</a></h3>
-                <p>A fun and easy outdoor experience capturing the true essence of the Olympics, set in venues tied to authentic Olympic events such as Zappeion and the Panathenaic Stadium. Discover the true Olympic spirit and practice your skills in long jump, shot put, javelin throw, and tug of war, culminating in a race at the world’s first modern Olympic Stadium, like a true ancient Greek Olympian athlete!</p>
-            </div>
-        </div>
-
-        <div class="tour">
-            <img src="cape-sounio-tour.jpg" alt="Cape Sounio Tour">
-            <div>
-                <h3><a href="https://www.alternativeathens.com/tours/cape-sounion-sunset-day-trip/">Cape Sounio & Athens Riviera Sunset Tour (5 hours)</a></h3>
-                <p>An impressive side of Athens and a scenic highlight no doubt, the Athens Riviera has it all. We’ll see the impressive Niarchos Cultural Center and the natural wonder setting of Lake Vouliagmeni. We’ll discover real life along the city’s coastline, visit a ‘hidden’ ancient temple, and visit the temple at Sounio as the sun sets.</p>
-            </div>
-        </div>
     </section>
 
-    <section>
-        <h2>Day Trips</h2>
-
-        <div class="tour">
-            <img src="delphi-day-trip.jpg" alt="Delphi Day Trip">
-            <div>
-                <h3><a href="https://www.alternativeathens.com/tours/delphi-day-trip/">The Ultimate Delphi Day Trip (12 hours)</a></h3>
-                <p>A full-day adventure to explore Delphi, the so-called center of the ancient world, and at the same time explore beautiful nearby villages and meet intriguing local people. We will visit the magnificent ancient site of Delphi and the beautiful museum, but unlike all other Delphi tours, this tour will let you discover rural Greece too: we’ll tour an eerie village lost in time and we’ll get to know one of the last tanners at work! Our delicious lunch will be in a local tavern, where the women of the village cook for us.</p>
-            </div>
-        </div>
-
-        <div class="tour">
-            <img src="mycenae-nafplio-day-trip.jpg" alt="Mycenae and Nafplio Day Trip">
-            <div>
-                <h3><a href="https://www.alternativeathens.com/tours/ancient-mycenae-and-nafplio-tour/">Extraordinary Mycenae & Nafplio Day Trip (11 hours)</a></h3>
-                <p>A full-day exploration of the ancient city of Mycenae, with its legendary Lion Gate and the Tomb of Agamemnon. We’ll pair this site with a well-worth visit of the charming seaside port of Nafplio, the first capital of Greece, and get to see modern Greek artisans, including potters, where they will work their crafts in the traditional fashion, explaining as they create. By all means, we’ll also get a great break for lunch at one of Nafplio’s trendiest tavernas only locals know about!</p>
-            </div>
-        </div>
-
-        <div class="tour">
-            <img src="hydra-day-trip.jpg" alt="Hydra Day Trip">
-            <div>
-                <h3><a href="https://www.alternativeathens.com/tours/hydra-island-day-trip/">A Dazzling Day Trip to Hydra (11 hours)</a></h3>
-                <p>This is a unique tour in the most picturesque island of Greece, the retreat of international jetsetters and rock stars (including Maria Callas, Leonard Cohen, Picasso, the Rolling Stones, and many more)! As soon as you arrive at the port you will understand why this car-free island was among the first Greek islands to become internationally famous. Then it’s time for a ride with the traditional means of transportation, the horse! The ride will be followed by a trip with a water taxi that will get you to an organized beach, where you will enjoy the sea and your lunch. Upon return to the port of Hydra, you will stroll its narrow streets and visit a well-preserved residence/museum of Greek Independence, as well as the residence and workshop of one of the many artists that found a peaceful refuge in Hydra. Finally, we will visit a local traditional pastry shop and see how the famous Hydra almond-based pastry is made!</p>
-            </div>
-        </div>
-
-        <div class="tour">
-            <img src="aegina-day-trip.jpg" alt="Aegina Day Trip">
-            <div>
-                <h3><a href="https://www.alternativeathens.com/tours/aegina-island-day-trip/">Enchanting Aegina Island (11 hours)</a></h3>
-                <p>This one-of-a-kind day trip to the island of Aegina will introduce you to Greek island life! The tour covers it all, from the mesmerizing Ancient Temple of Aphaia to the island’s medieval capital, Paleochora, a beautiful modern sculpture museum with breathtaking views, tastings of the famous Aegina pistachio-based products, and a swim at one of Aegina’s prettiest beaches. One of the highlights of the trip is a visit to a local farm, where you'll see a cheese-monger at work, you'll make your own rice pudding, and try home-made cheeses along with tsipouro drink!</p>
-            </div>
-        </div>
-    </section>
-
-        <section>
-        <h2>How to Book</h2>
-        <ol>
-            <li>Click on the tour you are interested in.</li>
-            <li>Go to "Book Now" or "Book as private"depending if you want to book a small group tour or a private tour.</li>
-            <li>Select the date you want.</li>
-            <li>During checkout, use code <strong>ACI10%</strong> in the field ‘have a code?’ to benefit from a 10% discount on your total (excluding entry fees).</li>
-        </ol>
-        <p>Questions? If you have any questions, please email Alternative Athens at <a href="mailto:contact@alternativeathens.com">contact@alternativeathens.com</a> or call +302110126544.</p>
-    </section>
-
-<footer>
+    <footer>
         <p style="font-size: 1.2rem; font-weight: bold; color: #003366;">We wish you a wonderful stay in Athens!</p>
     </footer>
 </body>
